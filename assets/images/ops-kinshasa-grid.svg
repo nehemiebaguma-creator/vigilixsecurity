@@ -1,0 +1,45 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" fill="#06111D"/>
+  <rect width="1600" height="980" fill="url(#bgGlow)"/>
+  <path d="M0 820C140 770 220 720 320 650C400 592 490 528 618 490C760 448 878 420 1036 390C1210 356 1362 282 1600 138V980H0V820Z" fill="#0A1E30"/>
+  <path d="M260 780C366 716 478 624 598 586C728 544 922 540 1048 512C1176 484 1298 430 1432 320" stroke="#16324A" stroke-width="26" stroke-linecap="round"/>
+  <path d="M160 640C290 590 412 540 558 496C730 444 840 406 946 320C1040 242 1094 166 1168 80" stroke="#13293D" stroke-width="20" stroke-linecap="round"/>
+  <path d="M334 202L460 302L598 282L728 360L810 334L942 436L1044 408L1184 472L1318 430" stroke="#1E4260" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M226 300L336 396L454 376L572 448L678 428L812 508L930 482L1082 560L1222 522L1382 610" stroke="#2B587D" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M208 424L292 452L430 438L540 526L652 520L774 596L892 586L1046 662L1162 636L1318 720" stroke="#224766" stroke-width="3.5" stroke-linecap="round" opacity="0.75"/>
+  <path d="M404 176V844" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M612 128V894" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M820 92V930" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M1024 128V886" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M1238 188V834" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M152 228H1452" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M118 384H1480" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M80 540H1520" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M126 696H1474" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <path d="M174 838H1426" stroke="#143049" stroke-width="2" opacity="0.65"/>
+  <circle cx="956" cy="322" r="26" fill="#FF4E5B" fill-opacity="0.18"/>
+  <circle cx="956" cy="322" r="11" fill="#FF4E5B"/>
+  <circle cx="1114" cy="370" r="24" fill="#FF4E5B" fill-opacity="0.16"/>
+  <circle cx="1114" cy="370" r="10" fill="#FF4E5B"/>
+  <circle cx="1226" cy="456" r="24" fill="#FF4E5B" fill-opacity="0.16"/>
+  <circle cx="1226" cy="456" r="10" fill="#FF4E5B"/>
+  <circle cx="1084" cy="532" r="22" fill="#FF4E5B" fill-opacity="0.14"/>
+  <circle cx="1084" cy="532" r="9" fill="#FF4E5B"/>
+  <circle cx="912" cy="618" r="22" fill="#48C4FF" fill-opacity="0.18"/>
+  <circle cx="912" cy="618" r="10" fill="#48C4FF"/>
+  <circle cx="702" cy="558" r="18" fill="#48C4FF" fill-opacity="0.15"/>
+  <circle cx="702" cy="558" r="8" fill="#48C4FF"/>
+  <circle cx="634" cy="664" r="18" fill="#48C4FF" fill-opacity="0.15"/>
+  <circle cx="634" cy="664" r="8" fill="#48C4FF"/>
+  <text x="930" y="292" fill="#DDEBFF" font-size="24" font-family="Segoe UI, Arial" letter-spacing="3">GOMBE</text>
+  <text x="1032" y="568" fill="#DDEBFF" font-size="24" font-family="Segoe UI, Arial" letter-spacing="3">MASINA</text>
+  <text x="734" y="640" fill="#DDEBFF" font-size="24" font-family="Segoe UI, Arial" letter-spacing="3">LIMETE</text>
+  <text x="516" y="738" fill="#DDEBFF" font-size="24" font-family="Segoe UI, Arial" letter-spacing="3">NGALIEMA</text>
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(926 460) rotate(89.2208) scale(698.065 931.839)">
+      <stop stop-color="#0D2D49"/>
+      <stop offset="0.44" stop-color="#081827"/>
+      <stop offset="1" stop-color="#06111D"/>
+    </radialGradient>
+  </defs>
+</svg>

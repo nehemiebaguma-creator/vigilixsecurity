@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">VIGILANCE RDC Command Map</title>
+  <desc id="desc">Stylized Democratic Republic of the Congo command map with Kinshasa focus, tactical routes, and VIGILANCE command markers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="100%" stop-color="#040b14"/>
+    </linearGradient>
+    <linearGradient id="glowBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7ae4ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2467ff" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="rdcBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00a3e0"/>
+      <stop offset="48%" stop-color="#00a3e0"/>
+      <stop offset="48%" stop-color="#f7d618"/>
+      <stop offset="60%" stop-color="#f7d618"/>
+      <stop offset="60%" stop-color="#ce1126"/>
+      <stop offset="100%" stop-color="#ce1126"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <g opacity="0.32">
+    <path d="M90 120 H1110" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M90 220 H1110" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M90 320 H1110" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M90 420 H1110" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M90 520 H1110" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M90 620 H1110" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M180 70 V650" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M360 70 V650" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M540 70 V650" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M720 70 V650" stroke="#2b5b8a" stroke-width="1"/>
+    <path d="M900 70 V650" stroke="#2b5b8a" stroke-width="1"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <path d="M216 196 L304 144 L420 138 L508 176 L592 148 L708 178 L802 164 L902 222 L958 314 L932 404 L980 490 L930 560 L844 586 L744 574 L650 612 L548 588 L454 604 L372 562 L300 498 L228 476 L198 394 L176 310 Z"
+      fill="#0c1c31" stroke="url(#glowBlue)" stroke-width="4"/>
+    <path d="M246 222 L328 182 L420 178 L490 206 L590 186 L688 214 L780 202 L866 246 L910 320 L892 396 L932 476 L892 530 L826 550 L736 542 L646 576 L560 554 L474 566 L404 532 L340 474 L274 454 L246 388 L228 320 Z"
+      fill="rgba(16,40,76,.48)" stroke="#5bd6ff" stroke-opacity="0.48" stroke-width="2"/>
+  </g>
+
+  <path d="M312 508 C372 490 426 474 492 446 C560 416 638 386 716 360 C764 344 834 320 888 286" fill="none" stroke="#75dfff" stroke-opacity="0.76" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M300 492 C352 470 404 450 454 430" fill="none" stroke="url(#rdcBand)" stroke-width="8" stroke-linecap="round"/>
+
+  <g>
+    <circle cx="304" cy="494" r="16" fill="#ff5e73"/>
+    <circle cx="304" cy="494" r="32" fill="none" stroke="#ff5e73" stroke-opacity="0.28" stroke-width="4"/>
+    <circle cx="304" cy="494" r="56" fill="none" stroke="#ff5e73" stroke-opacity="0.14" stroke-width="2"/>
+    <text x="332" y="486" fill="#ffffff" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="700">KINSHASA</text>
+    <text x="332" y="516" fill="#94dfff" font-size="18" font-family="Segoe UI, Arial, sans-serif">OPS CORE / METRO COMMAND</text>
+  </g>
+
+  <g fill="#8edcff" font-size="16" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">
+    <text x="374" y="456">MATADI AXIS</text>
+    <text x="520" y="426">KANANGA GRID</text>
+    <text x="694" y="382">KISANGANI ROUTE</text>
+    <text x="816" y="288">GOMA WATCH</text>
+  </g>
+
+  <g>
+    <circle cx="454" cy="430" r="8" fill="#7fe7ff"/>
+    <circle cx="620" cy="394" r="8" fill="#7fe7ff"/>
+    <circle cx="772" cy="328" r="8" fill="#7fe7ff"/>
+    <circle cx="890" cy="284" r="8" fill="#7fe7ff"/>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="108" y="86" width="256" height="18" rx="9" fill="url(#rdcBand)"/>
+    <text x="112" y="134" fill="#dff3ff" font-size="20" font-family="Segoe UI, Arial, sans-serif" letter-spacing="4">DEMOCRATIC REPUBLIC OF THE CONGO</text>
+    <text x="112" y="160" fill="#80cfff" font-size="14" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">TACTICAL NATIONAL OVERLAY</text>
+  </g>
+</svg>

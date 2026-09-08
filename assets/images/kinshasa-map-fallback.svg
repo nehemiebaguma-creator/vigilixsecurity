@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081524"/>
+      <stop offset="100%" stop-color="#102338"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.28" stroke="#45b9ff" stroke-width="2">
+    <path d="M0 610 L250 520 L450 480 L700 500 L920 430 L1180 360 L1600 250" fill="none"/>
+    <path d="M0 660 L300 620 L540 570 L810 530 L1080 480 L1360 450 L1600 420" fill="none"/>
+    <path d="M120 130 L300 260 L500 280 L690 240 L880 140 L1080 160 L1340 230 L1520 330" fill="none"/>
+    <path d="M390 0 L450 180 L560 290 L700 350 L820 490 L940 660 L1040 900" fill="none"/>
+    <path d="M930 0 L860 170 L860 310 L920 480 L1100 620 L1220 720 L1380 900" fill="none"/>
+  </g>
+  <g opacity="0.12" stroke="#5bc8ff" stroke-width="1">
+    <path d="M0 120 H1600M0 240 H1600M0 360 H1600M0 480 H1600M0 600 H1600M0 720 H1600M0 840 H1600"/>
+    <path d="M160 0 V900M320 0 V900M480 0 V900M640 0 V900M800 0 V900M960 0 V900M1120 0 V900M1280 0 V900M1440 0 V900"/>
+  </g>
+  <g fill="#d7f4ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" opacity="0.72">
+    <text x="910" y="210">GOMBE</text>
+    <text x="840" y="380">LIMETE</text>
+    <text x="1100" y="355">MASINA</text>
+    <text x="690" y="520">NGALIEMA</text>
+    <text x="1040" y="600">N DJILI</text>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="835" cy="370" r="14" fill="#8ce2ff"/>
+    <circle cx="1020" cy="420" r="11" fill="#ff6d8a"/>
+    <circle cx="1135" cy="314" r="11" fill="#ff6d8a"/>
+    <circle cx="760" cy="500" r="11" fill="#ff6d8a"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <defs>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 400) rotate(90) scale(320)">
+      <stop offset="0" stop-color="#8DEBFF" stop-opacity="0.38"/>
+      <stop offset="0.42" stop-color="#1A63D0" stop-opacity="0.28"/>
+      <stop offset="0.78" stop-color="#0A224B" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#041226" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="144" y1="136" x2="676" y2="680" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A4F4FF" stop-opacity="0.9"/>
+      <stop offset="0.52" stop-color="#45C4FF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#2E7FFF" stop-opacity="0.54"/>
+    </linearGradient>
+    <filter id="glow" x="70" y="70" width="660" height="660" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+    <circle cx="400" cy="400" r="286" fill="url(#core)" stroke="url(#stroke)" stroke-width="3"/>
+    <circle cx="400" cy="400" r="242" stroke="#63DAFF" stroke-opacity="0.28" stroke-width="1.5"/>
+    <circle cx="400" cy="400" r="194" stroke="#63DAFF" stroke-opacity="0.24" stroke-width="1.25"/>
+    <circle cx="400" cy="400" r="144" stroke="#63DAFF" stroke-opacity="0.18" stroke-width="1"/>
+
+    <ellipse cx="400" cy="400" rx="268" ry="112" stroke="#8EF0FF" stroke-opacity="0.42" stroke-width="1.5"/>
+    <ellipse cx="400" cy="400" rx="252" ry="186" stroke="#8EF0FF" stroke-opacity="0.18" stroke-width="1.25"/>
+    <ellipse cx="400" cy="400" rx="172" ry="280" stroke="#73D9FF" stroke-opacity="0.24" stroke-width="1.4"/>
+    <ellipse cx="400" cy="400" rx="92" ry="280" stroke="#73D9FF" stroke-opacity="0.18" stroke-width="1.2"/>
+
+    <path d="M204 336C244 302 282 286 316 290C344 294 364 316 374 334C346 342 316 360 292 386C274 406 264 430 258 454C234 442 212 422 196 392C182 366 182 350 204 336Z" fill="#5EE2FF" fill-opacity="0.14" stroke="#92F4FF" stroke-opacity="0.28"/>
+    <path d="M448 274C474 254 514 250 548 264C578 278 604 306 616 336C600 340 580 352 566 368C552 384 544 404 542 430C510 430 478 418 458 394C434 364 430 304 448 274Z" fill="#46C8FF" fill-opacity="0.14" stroke="#92F4FF" stroke-opacity="0.24"/>
+    <path d="M402 454C428 444 458 446 482 460C502 474 514 498 518 526C494 538 474 558 460 584C428 576 402 560 384 534C366 506 372 468 402 454Z" fill="#63DAFF" fill-opacity="0.16" stroke="#A6F5FF" stroke-opacity="0.28"/>
+
+    <path d="M178 402H622" stroke="#89EFFF" stroke-opacity="0.18" stroke-width="1"/>
+    <path d="M220 284L580 516" stroke="#53CCFF" stroke-opacity="0.12" stroke-width="1"/>
+    <path d="M244 540L556 310" stroke="#53CCFF" stroke-opacity="0.1" stroke-width="1"/>
+
+    <circle cx="314" cy="358" r="6" fill="#94F4FF" fill-opacity="0.8"/>
+    <circle cx="548" cy="340" r="5" fill="#94F4FF" fill-opacity="0.7"/>
+    <circle cx="438" cy="508" r="6" fill="#94F4FF" fill-opacity="0.76"/>
+  </g>
+</svg>

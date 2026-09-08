@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Portail client VIGILANCE Security</title>
+  <desc id="desc">Premium presentation poster for the VIGILANCE client portal with dashboard cards, surveillance flow, and brand promise.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06101d"/>
+      <stop offset="55%" stop-color="#07182a"/>
+      <stop offset="100%" stop-color="#040a12"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1c31" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#08111f" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8be5ff"/>
+      <stop offset="100%" stop-color="#216ef5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="24%" r="62%">
+      <stop offset="0%" stop-color="#2db7ff" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#2db7ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <g opacity="0.18" stroke="#4ba9ff" stroke-width="1">
+    <path d="M0 120H1600M0 240H1600M0 360H1600M0 480H1600M0 600H1600M0 720H1600M0 840H1600"/>
+    <path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/>
+  </g>
+
+  <g transform="translate(92 82)">
+    <rect width="1416" height="736" rx="34" fill="rgba(6, 15, 27, 0.65)" stroke="rgba(129, 200, 255, 0.18)" stroke-width="2"/>
+    <rect x="38" y="38" width="592" height="660" rx="28" fill="url(#panel)" stroke="rgba(129, 200, 255, 0.16)" stroke-width="2"/>
+    <rect x="662" y="38" width="716" height="286" rx="28" fill="url(#panel)" stroke="rgba(129, 200, 255, 0.16)" stroke-width="2"/>
+    <rect x="662" y="356" width="344" height="342" rx="28" fill="url(#panel)" stroke="rgba(129, 200, 255, 0.16)" stroke-width="2"/>
+    <rect x="1034" y="356" width="344" height="342" rx="28" fill="url(#panel)" stroke="rgba(129, 200, 255, 0.16)" stroke-width="2"/>
+
+    <g transform="translate(78 84)">
+      <rect x="0" y="0" width="126" height="126" rx="28" fill="#071321" stroke="rgba(129, 200, 255, 0.18)"/>
+      <circle cx="63" cy="68" r="48" fill="rgba(44, 163, 255, 0.16)"/>
+      <path d="M26 24h40l42 124-26 34-56-158z" fill="#dce9f8"/>
+      <path d="M100 24H60L18 148l26 34 56-158z" fill="#2f9fff"/>
+      <path d="M18 24h24l42 124-20 22-46-146z" fill="#ffffff" opacity=".18"/>
+      <path d="M108 24H84L42 148l22 22 44-146z" fill="#66d7ff" opacity=".18"/>
+    </g>
+
+    <g transform="translate(224 80)" fill="#f2f8ff" font-family="Segoe UI, Arial, sans-serif">
+      <text y="34" font-size="34" font-weight="700" letter-spacing="6">VIGILANCE SECURITY</text>
+      <text y="74" fill="#6fd3ff" font-size="18" letter-spacing="8">PORTAIL CLIENT PREMIUM</text>
+      <text y="132" font-size="56" font-weight="700">Quand tout le monde dort,</text>
+      <text y="196" font-size="56" font-weight="700" fill="#7ed9ff">VIGILANCE veille.</text>
+      <text y="258" fill="#a8c8e8" font-size="25">Presentation claire du projet, navigation propre et lecture convaincante</text>
+      <text y="292" fill="#a8c8e8" font-size="25">des cameras, alertes, paiements, geolocalisation et coordination OPS.</text>
+    </g>
+
+    <g transform="translate(78 410)">
+      <rect x="0" y="0" width="512" height="232" rx="24" fill="#07111c" stroke="rgba(129, 200, 255, 0.14)"/>
+      <text x="28" y="40" fill="#86dbff" font-size="18" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">PARCOURS VIGILANCE</text>
+      <g font-family="Segoe UI, Arial, sans-serif">
+        <rect x="28" y="66" width="148" height="134" rx="20" fill="rgba(13, 28, 47, 0.88)" stroke="rgba(129, 200, 255, 0.14)"/>
+        <rect x="194" y="66" width="148" height="134" rx="20" fill="rgba(13, 28, 47, 0.88)" stroke="rgba(129, 200, 255, 0.14)"/>
+        <rect x="360" y="66" width="124" height="134" rx="20" fill="rgba(13, 28, 47, 0.88)" stroke="rgba(129, 200, 255, 0.14)"/>
+        <text x="50" y="102" fill="#7ed9ff" font-size="14" letter-spacing="2">CAMERAS</text>
+        <text x="50" y="138" fill="#f3f9ff" font-size="22" font-weight="700">Lecture</text>
+        <text x="50" y="170" fill="#a6c4e3" font-size="16">multi-site</text>
+        <text x="216" y="102" fill="#7ed9ff" font-size="14" letter-spacing="2">ALERTES</text>
+        <text x="216" y="138" fill="#f3f9ff" font-size="22" font-weight="700">Qualification</text>
+        <text x="216" y="170" fill="#a6c4e3" font-size="16">priorisee</text>
+        <text x="382" y="102" fill="#7ed9ff" font-size="14" letter-spacing="2">OPS</text>
+        <text x="382" y="138" fill="#f3f9ff" font-size="22" font-weight="700">Action</text>
+        <text x="382" y="170" fill="#a6c4e3" font-size="16">coordonne</text>
+      </g>
+      <path d="M176 132H194" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M342 132H360" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(700 78)" font-family="Segoe UI, Arial, sans-serif">
+      <text x="0" y="26" fill="#86dbff" font-size="18" letter-spacing="3">LECTURE EXECUTIVE</text>
+      <text x="0" y="72" fill="#f3f9ff" font-size="40" font-weight="700">Un projet presente comme un centre de commandement</text>
+      <text x="0" y="116" fill="#a7c7e6" font-size="22">et non comme une simple galerie de pages.</text>
+
+      <rect x="0" y="150" width="664" height="96" rx="22" fill="rgba(10, 23, 39, 0.92)" stroke="rgba(129, 200, 255, 0.14)"/>
+      <text x="28" y="196" fill="#7ed9ff" font-size="16" letter-spacing="2">PROMESSE</text>
+      <text x="28" y="228" fill="#f4fbff" font-size="22" font-weight="700">Protection intelligente, reaction coordonnee, image premium.</text>
+    </g>
+
+    <g transform="translate(700 396)">
+      <rect width="268" height="300" rx="24" fill="#07111c" stroke="rgba(129, 200, 255, 0.14)"/>
+      <text x="26" y="36" fill="#86dbff" font-size="18" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">MODULES</text>
+      <g font-family="Segoe UI, Arial, sans-serif" font-size="22">
+        <text x="26" y="92" fill="#f3f9ff">Cameras</text>
+        <text x="26" y="136" fill="#f3f9ff">Alertes</text>
+        <text x="26" y="180" fill="#f3f9ff">Paiements</text>
+        <text x="26" y="224" fill="#f3f9ff">Geolocalisation</text>
+        <text x="26" y="268" fill="#f3f9ff">Centre OPS</text>
+      </g>
+      <g fill="#39d7a5" filter="url(#softGlow)">
+        <circle cx="228" cy="84" r="8"/>
+        <circle cx="228" cy="128" r="8"/>
+        <circle cx="228" cy="172" r="8"/>
+        <circle cx="228" cy="216" r="8"/>
+        <circle cx="228" cy="260" r="8"/>
+      </g>
+    </g>
+
+    <g transform="translate(1072 396)">
+      <rect width="268" height="300" rx="24" fill="#07111c" stroke="rgba(129, 200, 255, 0.14)"/>
+      <text x="26" y="36" fill="#86dbff" font-size="18" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">REPERES</text>
+      <g font-family="Segoe UI, Arial, sans-serif">
+        <text x="26" y="92" fill="#f4fbff" font-size="46" font-weight="700">24/7</text>
+        <text x="26" y="126" fill="#9bc0e4" font-size="18">veille operationnelle</text>
+        <text x="26" y="186" fill="#f4fbff" font-size="46" font-weight="700">1</text>
+        <text x="92" y="186" fill="#9bc0e4" font-size="18">marque unifiee</text>
+        <text x="26" y="248" fill="#f4fbff" font-size="46" font-weight="700">100%</text>
+        <text x="154" y="248" fill="#9bc0e4" font-size="18">logo VIGILANCE</text>
+      </g>
+    </g>
+  </g>
+</svg>
