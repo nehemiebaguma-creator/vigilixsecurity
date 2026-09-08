@@ -1,0 +1,897 @@
+/* VIGILANCE final light mode guard.
+   This file is loaded after module CSS to keep every light screen readable. */
+
+html[data-theme="light"] {
+    --bg: #e7eff7 !important;
+    --bg-alt: #f2f7fb !important;
+    --card-bg: #f8fbff !important;
+    --text: #07111f !important;
+    --muted-text: #2f4058 !important;
+    --border: rgba(18, 45, 78, .22) !important;
+    --primary: #006fc9 !important;
+    --danger: #c91632 !important;
+    --success: #087253 !important;
+    --warning: #8a5200 !important;
+    color-scheme: light !important;
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] body.ops-body,
+html[data-theme="light"] body.auth-shell,
+html[data-theme="light"] body.landing-body,
+html[data-theme="light"] body:not(.landing-body):not(.auth-shell) {
+    background:
+        radial-gradient(circle at 8% 8%, rgba(0, 111, 201, .10), transparent 28%),
+        radial-gradient(circle at 86% 6%, rgba(247, 214, 24, .14), transparent 24%),
+        linear-gradient(180deg, #f2f7fb 0%, #e7eff7 58%, #dde8f2 100%) !important;
+    color: #07111f !important;
+}
+
+html[data-theme="light"] body::before,
+html[data-theme="light"] body::after,
+html[data-theme="light"] .app-shell::before,
+html[data-theme="light"] .app-shell::after,
+html[data-theme="light"] .ops-body::before,
+html[data-theme="light"] .ops-body::after,
+html[data-theme="light"] .auth-shell::before,
+html[data-theme="light"] .auth-shell::after,
+html[data-theme="light"] .landing-body::before,
+html[data-theme="light"] .landing-body::after {
+    background: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+    opacity: .06 !important;
+}
+
+html[data-theme="light"] body.ops-body::before {
+    content: "" !important;
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+    background:
+        radial-gradient(circle at 50% 36%, rgba(0, 111, 201, .13), transparent 28%),
+        url("../images/rdc-coat-of-arms.svg") center clamp(86px, 16vh, 190px) / min(50vw, 780px) no-repeat !important;
+    opacity: .18 !important;
+    filter: drop-shadow(0 18px 38px rgba(0, 63, 126, .18)) saturate(1.08) contrast(1.04) !important;
+}
+
+html[data-theme="light"] .app-shell::before {
+    content: "" !important;
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+    background:
+        radial-gradient(circle at 72% 45%, rgba(0, 111, 201, .10), transparent 22%),
+        url("../images/rdc-coat-of-arms.svg") right 38px center / min(34vw, 640px) no-repeat !important;
+    opacity: .16 !important;
+    filter: drop-shadow(0 16px 34px rgba(0, 63, 126, .16)) saturate(1.06) contrast(1.04) !important;
+}
+
+html[data-theme="light"] body *,
+html[data-theme="light"] body *::before,
+html[data-theme="light"] body *::after {
+    text-shadow: none !important;
+}
+
+html[data-theme="light"] body :where(
+    section, article, aside, main, header, footer, nav, form, table, thead, tbody,
+    tr, td, th, ul, ol, li, div
+)[class]:not(.vg-theme-toggle):not(.vg-theme-toggle *):not(.vg-global-brand):not(.vg-global-brand *):not([class*="logo"]):not([class*="brand__mark"]):not([class*="brand-mark"]):not([class*="map"]):not([class*="leaflet"]):not([class*="camera"]):not([class*="hud"]):not([class*="radar"]):not([class*="globe"]):not([class*="satellite"]):not([class*="camera-wall"]):not([class*="live-shell"]):not([class*="ip-shell"]):not([class*="video-frame"]):not([class*="video"]) {
+    background: linear-gradient(180deg, rgba(250, 253, 255, .98), rgba(235, 244, 252, .96)) !important;
+    border-color: rgba(18, 45, 78, .20) !important;
+    color: #07111f !important;
+    box-shadow: 0 18px 42px rgba(14, 34, 58, .10) !important;
+}
+
+html[data-theme="light"] body :where(
+    [class*="panel"], [class*="card"], [class*="item"], [class*="module"],
+    [class*="brief"], [class*="mini"], [class*="kpi"], [class*="result"],
+    [class*="match"], [class*="event"], [class*="note"], [class*="empty"],
+    [class*="placeholder"], [class*="quickfact"], [class*="doctrine"],
+    [class*="summary"], [class*="assign"], [class*="legend"]
+):not(.vg-theme-toggle):not(.vg-theme-toggle *):not(.vg-global-brand):not(.vg-global-brand *):not([class*="map"]):not([class*="leaflet"]):not([class*="camera"]):not([class*="hud"]):not([class*="radar"]):not([class*="globe"]):not([class*="satellite"]):not([class*="camera-wall"]):not([class*="live-shell"]):not([class*="video"]) {
+    background: linear-gradient(180deg, rgba(250, 253, 255, .99), rgba(235, 244, 252, .97)) !important;
+    border-color: rgba(18, 45, 78, .20) !important;
+    color: #07111f !important;
+    box-shadow: 0 18px 42px rgba(14, 34, 58, .10) !important;
+}
+
+html[data-theme="light"] body :where(
+    [class*="visual"], [class*="preview"], [class*="media"], [class*="hero"]
+):not(.vg-theme-toggle):not(.vg-theme-toggle *):not(.vg-global-brand):not(.vg-global-brand *):not([class*="camera"]):not([class*="video"]):not([class*="map"]):not([class*="leaflet"]):not([class*="photo"]):not([class*="image"]) {
+    background:
+        radial-gradient(circle at 18% 12%, rgba(0, 111, 201, .10), transparent 32%),
+        linear-gradient(180deg, rgba(250, 253, 255, .96), rgba(229, 242, 255, .92)) !important;
+    border-color: rgba(0, 111, 201, .20) !important;
+    color: #07111f !important;
+    box-shadow: 0 18px 42px rgba(14, 34, 58, .10) !important;
+}
+
+html[data-theme="light"] body :where(
+    h1, h2, h3, h4, h5, h6, strong, b, label, legend, th,
+    .title, [class*="title"], [class*="headline"], [class*="heading"]
+):not(.vg-theme-toggle):not(.vg-theme-toggle *):not(.vg-global-brand):not(.vg-global-brand *) {
+    color: #07111f !important;
+    opacity: 1 !important;
+}
+
+html[data-theme="light"] body :where(
+    p, small, li, td, dd, span, em, div
+):not(.vg-theme-toggle):not(.vg-theme-toggle *):not(.vg-global-brand):not(.vg-global-brand *):not(.btn):not([class*="btn"]):not([class*="button"]):not([class*="badge"]):not([class*="pill"]):not([class*="chip"]):not([class*="status"]):not([class*="danger"]):not([class*="success"]):not([class*="warning"]):not([class*="warn"]):not([class*="critical"]) {
+    color: #2f4058 !important;
+    opacity: 1 !important;
+}
+
+html[data-theme="light"] body :where(a):not(.btn):not([class*="btn"]):not([class*="button"]):not(.vg-global-brand) {
+    color: #0057a8 !important;
+}
+
+html[data-theme="light"] body :where(input, select, textarea) {
+    background: #fbfdff !important;
+    color: #07111f !important;
+    border-color: rgba(18, 45, 78, .28) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8), 0 8px 18px rgba(14, 34, 58, .06) !important;
+}
+
+html[data-theme="light"] body :where(input, select, textarea)::placeholder {
+    color: #5c6f88 !important;
+    opacity: 1 !important;
+}
+
+html[data-theme="light"] body :where(button, .btn, .vg-button, .ops-btn, [class*="button"]):not(.vg-theme-toggle):not(.vg-theme-toggle *) {
+    background: linear-gradient(180deg, #ffffff, #edf5fc) !important;
+    border-color: rgba(18, 45, 78, .22) !important;
+    color: #07111f !important;
+    box-shadow: 0 12px 26px rgba(14, 34, 58, .09) !important;
+}
+
+html[data-theme="light"] body :where(.btn-primary, .vg-button-primary, .site-nav__cta, [class*="primary"]:is(button, a), button[type="submit"]) {
+    background: linear-gradient(180deg, #0b8ee8, #0062b8) !important;
+    border-color: rgba(0, 88, 168, .38) !important;
+    color: #ffffff !important;
+}
+
+html[data-theme="light"] body :where(.btn-danger, .ops-btn-danger, [class*="danger"]:is(button, a), [class*="critical"]:is(button, a), [class*="siren"]:is(button, a)) {
+    background: linear-gradient(180deg, #f0445b, #bd1230) !important;
+    border-color: rgba(189, 18, 48, .36) !important;
+    color: #ffffff !important;
+}
+
+html[data-theme="light"] body :where(.badge, .pill, [class*="badge"], [class*="pill"], [class*="chip"], [class*="tag"]) {
+    background: #e7f2ff !important;
+    border-color: rgba(0, 111, 201, .24) !important;
+    color: #004f99 !important;
+}
+
+html[data-theme="light"] body :where(.badge-danger, .alert-danger, [class*="danger"], [class*="critical"]):not(button):not(a) {
+    background: #fff0f3 !important;
+    border-color: rgba(189, 18, 48, .28) !important;
+    color: #861026 !important;
+}
+
+html[data-theme="light"] body :where(.badge-success, .alert-success, [class*="success"], [class*="online"], .ok, [class*="--ok"], [class*="-ok"], [class*="_ok"]):not(button):not(a) {
+    background: #e9fff6 !important;
+    border-color: rgba(8, 114, 83, .24) !important;
+    color: #075e45 !important;
+}
+
+html[data-theme="light"] body :where(.badge-warning, .alert-warning, [class*="warning"], [class*="warn"], [class*="limited"], [class*="degraded"]):not(button):not(a) {
+    background: #fff6df !important;
+    border-color: rgba(138, 82, 0, .24) !important;
+    color: #744400 !important;
+}
+
+html[data-theme="light"] body :where([style*="color:#fff"], [style*="color:#ffffff"], [style*="color:#f7fbff"], [style*="color:#f5fbff"], [style*="color:#f4fbff"], [style*="color:#edf4ff"], [style*="color:#ebf5ff"], [style*="color:#eef5ff"]) {
+    color: #07111f !important;
+}
+
+html[data-theme="light"] body :where([style*="color:#99bddf"], [style*="color:#a7c9ea"], [style*="color:#8fbbe4"], [style*="color:#82b6e8"], [style*="color:#81b5e8"], [style*="color:#88b8e7"], [style*="color:#9cb6cf"], [style*="color:#8fb8de"], [style*="color:#a9c7e6"], [style*="color:#b9d5f0"], [style*="color:#cfe6ff"]) {
+    color: #2f4058 !important;
+}
+
+html[data-theme="light"] body :where(
+    [style*="background:rgba(5,"], [style*="background:rgba(6,"],
+    [style*="background:rgba(7,"], [style*="background:rgba(8,"],
+    [style*="background: rgba(5,"], [style*="background: rgba(6,"],
+    [style*="background: rgba(7,"], [style*="background: rgba(8,"],
+    [style*="background:linear-gradient(180deg,rgba(5,"],
+    [style*="background:linear-gradient(180deg,rgba(6,"],
+    [style*="background:linear-gradient(180deg,rgba(7,"],
+    [style*="background:linear-gradient(180deg,rgba(8,"],
+    [style*="background:linear-gradient(180deg, rgba(5,"],
+    [style*="background:linear-gradient(180deg, rgba(6,"],
+    [style*="background:linear-gradient(180deg, rgba(7,"],
+    [style*="background:linear-gradient(180deg, rgba(8,"]
+):not(.vg-theme-toggle):not(.vg-theme-toggle *):not(.vg-global-brand):not(.vg-global-brand *):not([class*="map"]):not([class*="leaflet"]):not([class*="camera"]):not([class*="video"]) {
+    background: linear-gradient(180deg, rgba(250, 253, 255, .99), rgba(235, 244, 252, .97)) !important;
+    border-color: rgba(18, 45, 78, .20) !important;
+}
+
+html[data-theme="light"] body :where(img, video, iframe, canvas, svg) {
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+html[data-theme="light"] .vg-global-brand {
+    background: linear-gradient(180deg, rgba(250, 253, 255, .98), rgba(235, 244, 252, .96)) !important;
+    border-color: rgba(18, 45, 78, .18) !important;
+    box-shadow: 0 18px 42px rgba(14, 34, 58, .14) !important;
+}
+
+html[data-theme="light"] .vg-global-brand,
+html[data-theme="light"] .vg-global-brand * {
+    color: #07111f !important;
+    text-shadow: none !important;
+}
+
+html[data-theme="light"] .vg-global-brand__copy strong {
+    color: #07111f !important;
+}
+
+html[data-theme="light"] .vg-global-brand__copy small {
+    color: #2f4058 !important;
+}
+
+html[data-theme="light"] .vg-global-brand__logo {
+    background:
+        radial-gradient(circle at 50% 18%, rgba(45, 168, 255, .22), transparent 48%),
+        linear-gradient(180deg, #061525, #0b2d4a) !important;
+    border-color: rgba(0, 111, 201, .34) !important;
+}
+
+html[data-theme="light"] .vg-global-brand__logo img,
+html[data-theme="light"] :where(.brand-logo-wrap img, .brand-mark img, .brand__mark img, img[src*="brand-media.php"]) {
+    background: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    mix-blend-mode: normal !important;
+    filter: drop-shadow(0 8px 18px rgba(0, 35, 80, .22)) !important;
+}
+
+html[data-theme="light"] :where(.brand__wordmark, .auth-wordmark, img[src*="vigilance-wordmark"]) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    filter: drop-shadow(0 12px 24px rgba(14, 34, 58, .22)) !important;
+}
+
+html[data-theme="light"] :where(img[alt*="Armoiries"], img[src*="rdc-coat-of-arms"]) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    padding: 10px !important;
+    border-radius: 24px !important;
+    background: rgba(255, 255, 255, .90) !important;
+    border: 1px solid rgba(0, 111, 201, .22) !important;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, .14) !important;
+    filter: drop-shadow(0 10px 22px rgba(0, 45, 90, .20)) contrast(1.04) saturate(1.04) !important;
+}
+
+html[data-theme="light"] .vg-theme-toggle {
+    background: linear-gradient(180deg, #ffffff, #f2f6fb) !important;
+    border-color: rgba(35, 57, 88, .20) !important;
+    color: #0f172a !important;
+    box-shadow: 0 18px 38px rgba(31, 45, 66, .18) !important;
+}
+
+html[data-theme="light"] .vg-theme-toggle * {
+    color: inherit !important;
+}
+
+html[data-theme="light"] .vg-theme-toggle__knob {
+    background: linear-gradient(180deg, #2da8ff, #006fc9) !important;
+    color: #ffffff !important;
+}
+
+/* Official logo visibility guard for light mode. */
+html[data-theme="light"] :where(img[src*="brand-media.php"], .brand-logo-wrap img, .brand__wordmark, .auth-wordmark, img.brand-mark, .vg-global-brand__logo img) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    background: transparent !important;
+    filter: drop-shadow(0 12px 26px rgba(14, 34, 58, .24)) !important;
+}
+
+html[data-theme="light"] :where(.brand-logo-wrap, .brand__mark, .auth-logo, .vg-global-brand__logo, img.brand-mark) {
+    background:
+        radial-gradient(circle at 50% 18%, rgba(45, 168, 255, .2), transparent 52%),
+        linear-gradient(180deg, #061525, #0b2d4a) !important;
+    border-color: rgba(0, 111, 201, .34) !important;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, .16), inset 0 0 0 1px rgba(255, 255, 255, .08) !important;
+}
+
+html[data-theme="light"] :where(.brand__wordmark--official, .auth-wordmark--official, img[src*="brand-media.php"].brand__wordmark, img[src*="brand-media.php"].auth-wordmark) {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* Final media/theme guard: light mode must never bleach operational photos. */
+.vg-theme-toggle {
+    top: 72px !important;
+    right: 22px !important;
+    bottom: auto !important;
+    z-index: 10050 !important;
+    min-height: 38px !important;
+    padding: 4px 12px 4px 5px !important;
+    border-radius: 999px !important;
+}
+
+.vg-theme-toggle__knob {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+body.landing-body .vg-theme-toggle,
+html[data-theme="light"] body.landing-body .vg-theme-toggle {
+    top: 82px !important;
+    right: 24px !important;
+}
+
+html[data-theme="light"] .brand__copy--official::before {
+    content: none !important;
+    display: none !important;
+}
+
+html[data-theme="light"] :where(.brand__wordmark--official, .auth-wordmark--official, img[src*="brand-media.php"].brand__wordmark, img[src*="brand-media.php"].auth-wordmark) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    object-fit: contain !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    filter: drop-shadow(0 14px 28px rgba(14, 34, 58, .24)) !important;
+}
+
+html[data-theme="light"] :where(.hero-media, .scene-card__media, .ops-panel__visual, .home-hero-media, .media-card, .portal-video-frame, .camera-preview, .image-preview, .photo-frame, .visual-frame) {
+    background: #071525 !important;
+    border-color: rgba(35, 57, 88, .18) !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+}
+
+html[data-theme="light"] body.landing-body .hero-media {
+    background-color: #071525 !important;
+    background-image: url("../images/hero-ops-photo.jpg") !important;
+    background-position: left center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(1) .scene-card__media {
+    background-color: #071525 !important;
+    background-image: url("../images/vgt-hero.jpg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(2) .scene-card__media {
+    background-color: #071525 !important;
+    background-image: url("../images/hero-ops-photo.jpg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(3) .scene-card__media {
+    background-color: #071525 !important;
+    background-image: url("../images/agent-chien.jpg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(4) .scene-card__media,
+html[data-theme="light"] body.landing-body .ops-panel__visual {
+    background-color: #071525 !important;
+    background-image: url("../images/vgt-features.jpg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+html[data-theme="light"] :where(.hero-media img, .scene-card__media img, .ops-panel__visual img, .home-hero-media img, .media-card img, .portal-video-frame img, .camera-preview img, .image-preview img, .photo-frame img, .visual-frame img, img[src*="/assets/images/"]):not([src*="brand-media.php"]) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    filter: saturate(1.08) contrast(1.05) brightness(.98) !important;
+}
+
+html[data-theme="light"] :where(.hero-media__veil, .scene-card__overlay) {
+    opacity: 1 !important;
+    pointer-events: none !important;
+    background:
+        linear-gradient(180deg, rgba(5, 12, 22, .02) 0%, rgba(5, 12, 22, .16) 52%, rgba(5, 12, 22, .36) 100%),
+        linear-gradient(125deg, rgba(0, 111, 201, .08), transparent 42%, rgba(247, 214, 24, .08)) !important;
+}
+
+html[data-theme="light"] body.landing-body :where(.hero-media__veil, .scene-card__overlay) {
+    display: none !important;
+    opacity: 0 !important;
+    background: none !important;
+}
+
+html[data-theme="light"] body.landing-body :where(.hero-media img, .scene-card__media img, .ops-panel__visual img) {
+    opacity: 1 !important;
+    filter: saturate(1.2) contrast(1.18) brightness(.82) !important;
+}
+
+html[data-theme="light"] .vg-theme-toggle,
+html[data-theme="light"] body.landing-body .vg-theme-toggle {
+    top: 18px !important;
+    right: 24px !important;
+    bottom: auto !important;
+    z-index: 10080 !important;
+}
+
+html[data-theme="light"] body.landing-body :where(.hero-media, .scene-card__media, .ops-panel__visual) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    min-height: 320px !important;
+    background-color: #071525 !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-blend-mode: normal !important;
+    border-color: rgba(18, 45, 78, .24) !important;
+    box-shadow: 0 22px 54px rgba(14, 34, 58, .16) !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+}
+
+html[data-theme="light"] body.landing-body .hero-media {
+    background-image: url("../images/hero-ops-photo.jpg") !important;
+    background-position: left center !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(1) .scene-card__media {
+    background-image: url("../images/vgt-hero.jpg") !important;
+    background-position: center !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(2) .scene-card__media {
+    background-image: url("../images/hero-ops-photo.jpg") !important;
+    background-position: center !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(3) .scene-card__media {
+    background-image: url("../images/agent-chien.jpg") !important;
+    background-position: center !important;
+}
+
+html[data-theme="light"] body.landing-body .scene-card:nth-child(4) .scene-card__media,
+html[data-theme="light"] body.landing-body .ops-panel__visual {
+    background-image: url("../images/vgt-features.jpg") !important;
+    background-position: center !important;
+}
+
+html[data-theme="light"] body.landing-body :where(.hero-media img, .scene-card__media img, .ops-panel__visual img) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    mix-blend-mode: normal !important;
+    background: transparent !important;
+    filter: saturate(1.14) contrast(1.1) brightness(.9) !important;
+    z-index: 0 !important;
+}
+
+html[data-theme="light"] body.landing-body .hero-media img {
+    object-position: left center !important;
+}
+
+html[data-theme="light"] body.landing-body :where(.hero-media__veil, .scene-card__overlay) {
+    display: none !important;
+    opacity: 0 !important;
+    background: none !important;
+}
+
+html[data-theme="light"] body.landing-body :where(.hero-badge, .ops-signal) {
+    position: absolute !important;
+    z-index: 3 !important;
+    background: rgba(255, 255, 255, .94) !important;
+    border-color: rgba(18, 45, 78, .18) !important;
+    color: #07111f !important;
+    box-shadow: 0 14px 28px rgba(14, 34, 58, .16) !important;
+}
+
+@media (max-width: 760px) {
+    .vg-theme-toggle,
+    body.landing-body .vg-theme-toggle,
+    html[data-theme="light"] body.landing-body .vg-theme-toggle {
+        top: auto !important;
+        right: 14px !important;
+        bottom: 14px !important;
+    }
+}
+
+/* Control center light-mode override: keep the OPS radar visible and structured. */
+html[data-theme="light"] body.ops-body .ops-hud-core {
+    background:
+        radial-gradient(circle at 50% 52%, rgba(79, 152, 231, .18) 0%, rgba(79, 152, 231, 0) 24%),
+        radial-gradient(circle at 15% 16%, rgba(0, 111, 201, .16), transparent 22%),
+        radial-gradient(circle at 85% 14%, rgba(247, 214, 24, .14), transparent 18%),
+        linear-gradient(rgba(113, 149, 194, .16) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(113, 149, 194, .16) 1px, transparent 1px),
+        linear-gradient(180deg, #f7fbff 0%, #e4eef8 100%) !important;
+    background-size: auto, auto, auto, 46px 46px, 46px 46px, 100% 100% !important;
+    border-color: rgba(31, 67, 106, .2) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .68), inset 0 0 120px rgba(39, 111, 196, .06), 0 24px 54px rgba(14, 34, 58, .12) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-core::before,
+html[data-theme="light"] body.ops-body .ops-hud-core::after {
+    border-color: rgba(31, 67, 106, .16) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-satellite {
+    background:
+        linear-gradient(rgba(0, 111, 201, .06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 111, 201, .06) 1px, transparent 1px),
+        linear-gradient(180deg, transparent 0%, rgba(210, 225, 239, .36) 56%, rgba(187, 207, 229, .46) 100%) !important;
+    background-size: 52px 52px, 52px 52px, 100% 100% !important;
+    opacity: .34 !important;
+    filter: none !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-satellite::after {
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 111, 201, .05) 48%, transparent 49%, transparent 100%) !important;
+    opacity: .2 !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-national {
+    opacity: .36 !important;
+    filter: drop-shadow(0 18px 34px rgba(0, 63, 126, .18)) saturate(1.06) contrast(1.08) !important;
+    mix-blend-mode: multiply !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-command-bridge::after {
+    opacity: .20 !important;
+    filter: drop-shadow(0 18px 36px rgba(0, 63, 126, .18)) saturate(1.08) contrast(1.08) !important;
+    mix-blend-mode: multiply !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-command-bridge__smartcard {
+    background:
+        radial-gradient(circle at top right, rgba(0, 111, 201, .10), transparent 30%),
+        url("../images/ops-rdc-command.svg") right -10px bottom -10px / 240px auto no-repeat,
+        linear-gradient(180deg, rgba(252, 254, 255, .98), rgba(233, 242, 250, .96)) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-ellipse,
+html[data-theme="light"] body.ops-body .ops-hud-globe__ring,
+html[data-theme="light"] body.ops-body .ops-hud-globe__latitude {
+    border-color: rgba(0, 111, 201, .24) !important;
+    box-shadow: none !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-globe {
+    background:
+        radial-gradient(circle at 50% 50%, rgba(0, 111, 201, .2) 0%, rgba(0, 111, 201, .08) 42%, rgba(255, 255, 255, 0) 72%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .18), rgba(255, 255, 255, 0) 68%) !important;
+    mix-blend-mode: normal !important;
+    opacity: .9 !important;
+    box-shadow: 0 0 0 1px rgba(0, 111, 201, .08), 0 24px 52px rgba(33, 77, 121, .12), inset 0 0 52px rgba(92, 190, 255, .08) !important;
+    filter: drop-shadow(0 14px 28px rgba(0, 111, 201, .12)) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-globe::before {
+    background: conic-gradient(from 0deg, rgba(0, 111, 201, 0) 0deg, rgba(0, 111, 201, 0) 284deg, rgba(0, 111, 201, .1) 310deg, rgba(0, 163, 224, .26) 334deg, rgba(0, 111, 201, 0) 360deg) !important;
+    mix-blend-mode: normal !important;
+    opacity: .74 !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-globe::after {
+    border-color: rgba(0, 111, 201, .24) !important;
+    box-shadow: 0 0 0 1px rgba(0, 111, 201, .08), 0 0 34px rgba(0, 111, 201, .14), inset 0 0 28px rgba(0, 163, 224, .08) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-route {
+    background: linear-gradient(90deg, rgba(0, 163, 224, .12), rgba(0, 163, 224, .74), rgba(216, 31, 70, .56)) !important;
+    box-shadow: 0 0 18px rgba(0, 111, 201, .18) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-statusbar {
+    background: rgba(248, 252, 255, .86) !important;
+    border: 1px solid rgba(31, 67, 106, .12) !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0 18px 34px rgba(31, 45, 66, .08) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-statuschip,
+html[data-theme="light"] body.ops-body .ops-hud-national-badge,
+html[data-theme="light"] body.ops-body .ops-map-tag {
+    background: linear-gradient(180deg, rgba(251, 253, 255, .98), rgba(233, 242, 251, .96)) !important;
+    border-color: rgba(31, 67, 106, .16) !important;
+    color: #24405f !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-map-tag strong,
+html[data-theme="light"] body.ops-body .ops-hud-statuschip strong {
+    color: #0f172a !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-camera-node::before {
+    background: linear-gradient(90deg, rgba(0, 111, 201, .08), rgba(0, 111, 201, .56), rgba(190, 30, 55, .34)) !important;
+    box-shadow: 0 0 18px rgba(0, 111, 201, .16) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-camera-node::after {
+    border-color: rgba(0, 111, 201, .16) !important;
+    background: radial-gradient(circle, rgba(0, 111, 201, .14), rgba(0, 111, 201, 0) 68%) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-camera-node .ops-camera-tile {
+    background: linear-gradient(180deg, rgba(233, 241, 249, .98), rgba(213, 226, 239, .97)) !important;
+    border-color: rgba(46, 78, 114, .22) !important;
+    box-shadow: 0 22px 44px rgba(31, 45, 66, .14), inset 0 1px 0 rgba(255, 255, 255, .72) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-camera-preview {
+    background: #102133 !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-camera-preview::after {
+    background: linear-gradient(180deg, rgba(10, 21, 37, .08), rgba(17, 35, 56, .42)) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-camera-tile strong,
+html[data-theme="light"] body.ops-body .ops-camera-state,
+html[data-theme="light"] body.ops-body .ops-camera-reason {
+    color: #0f172a !important;
+    text-shadow: none !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-camera-tile span {
+    color: #42566f !important;
+    text-shadow: none !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-camera-dismiss {
+    background: rgba(255, 255, 255, .96) !important;
+    border-color: rgba(30, 64, 116, .2) !important;
+    color: #102133 !important;
+    box-shadow: 0 10px 22px rgba(31, 45, 66, .14) !important;
+}
+
+/* Final light-mode direction: premium sky blue, not black and white. */
+html[data-theme="light"] {
+    --bg: #dff3ff !important;
+    --bg-alt: #eaf8ff !important;
+    --card-bg: #f3fbff !important;
+    --text: #071a2f !important;
+    --muted-text: #2f5876 !important;
+    --border: rgba(0, 151, 226, .28) !important;
+    --primary: #009de8 !important;
+    color-scheme: light;
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] body.ops-body,
+html[data-theme="light"] body.auth-shell,
+html[data-theme="light"] body.landing-body,
+html[data-theme="light"] body:not(.landing-body):not(.auth-shell) {
+    background:
+        radial-gradient(circle at 8% 8%, rgba(0, 170, 255, .22), transparent 30%),
+        radial-gradient(circle at 84% 10%, rgba(124, 214, 255, .22), transparent 26%),
+        radial-gradient(circle at 50% 100%, rgba(0, 111, 201, .12), transparent 34%),
+        linear-gradient(180deg, #effaff 0%, #dff3ff 54%, #cfeaff 100%) !important;
+    color: #071a2f !important;
+}
+
+html[data-theme="light"] body :where(section, article, aside, main, header, footer, nav, form, table, thead, tbody, tr, td, th, ul, ol, li, div)[class]:not(.vg-theme-toggle):not(.vg-theme-toggle *):not([class*="logo"]):not([class*="brand"]):not([class*="media"]):not([class*="image"]):not([class*="photo"]):not([class*="video"]):not([class*="map"]):not([class*="leaflet"]):not([class*="camera"]):not([class*="hud"]):not([class*="radar"]):not([class*="globe"]):not([class*="satellite"]):not([class*="camera-wall"]):not([class*="live-shell"]):not([class*="ip-shell"]) {
+    background: linear-gradient(180deg, rgba(247, 253, 255, .98), rgba(224, 244, 255, .96)) !important;
+    border-color: rgba(0, 151, 226, .24) !important;
+    box-shadow: 0 18px 42px rgba(0, 96, 160, .12) !important;
+    color: #071a2f !important;
+}
+
+html[data-theme="light"] body :where(h1, h2, h3, h4, h5, h6, strong, b, label, legend, th, .title, [class*="title"], [class*="headline"], [class*="heading"], [class*="eyebrow"]) {
+    color: #071a2f !important;
+}
+
+html[data-theme="light"] body :where(p, small, li, td, span, em, div):not(.vg-theme-toggle):not(.vg-theme-toggle *):not(.btn):not([class*="btn"]):not([class*="button"]):not([class*="badge"]):not([class*="pill"]):not([class*="chip"]):not([class*="status"]):not([class*="danger"]):not([class*="success"]):not([class*="warning"]):not([class*="warn"]):not([class*="critical"]) {
+    color: #2f5876 !important;
+}
+
+html[data-theme="light"] body :where(input, select, textarea) {
+    background: #f7fdff !important;
+    border-color: rgba(0, 151, 226, .30) !important;
+    color: #071a2f !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), 0 8px 18px rgba(0, 111, 201, .08) !important;
+}
+
+html[data-theme="light"] body :where(button, .btn, .vg-button, .ops-btn, [class*="button"]):not(.vg-theme-toggle):not(.vg-theme-toggle *) {
+    background: linear-gradient(180deg, #f8fdff, #dff3ff) !important;
+    border-color: rgba(0, 151, 226, .30) !important;
+    color: #071a2f !important;
+    box-shadow: 0 12px 28px rgba(0, 111, 201, .13) !important;
+}
+
+html[data-theme="light"] body :where(.btn-primary, .vg-button-primary, .site-nav__cta, [class*="primary"]:is(button, a), button[type="submit"], .ops-btn-primary) {
+    background: linear-gradient(180deg, #35c6ff, #008fe3) !important;
+    border-color: rgba(0, 119, 200, .40) !important;
+    color: #ffffff !important;
+    box-shadow: 0 16px 34px rgba(0, 143, 227, .25) !important;
+}
+
+html[data-theme="light"] body :where(.badge, .pill, [class*="badge"], [class*="pill"], [class*="chip"], [class*="tag"]) {
+    background: #def4ff !important;
+    border-color: rgba(0, 168, 240, .32) !important;
+    color: #005f9f !important;
+}
+
+html[data-theme="light"] .vg-theme-toggle {
+    background: linear-gradient(180deg, #f8fdff, #dff3ff) !important;
+    border-color: rgba(0, 151, 226, .32) !important;
+    color: #071a2f !important;
+    box-shadow: 0 18px 38px rgba(0, 111, 201, .18) !important;
+}
+
+html[data-theme="light"] .vg-theme-toggle__knob {
+    background: linear-gradient(180deg, #35c6ff, #008fe3) !important;
+}
+
+html[data-theme="light"] body.ops-body .ops-hud-core {
+    background:
+        radial-gradient(circle at 50% 52%, rgba(53, 198, 255, .24) 0%, rgba(53, 198, 255, 0) 26%),
+        radial-gradient(circle at 15% 16%, rgba(0, 168, 240, .22), transparent 24%),
+        radial-gradient(circle at 85% 14%, rgba(124, 214, 255, .20), transparent 20%),
+        linear-gradient(rgba(0, 168, 240, .18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 168, 240, .18) 1px, transparent 1px),
+        linear-gradient(180deg, #f1fbff 0%, #d9f0ff 100%) !important;
+    background-size: auto, auto, auto, 46px 46px, 46px 46px, 100% 100% !important;
+}
+
+/* Carte Radar Intelligente: the map must stay visible in light mode. */
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-atlas-stage,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-atlas-stage[class] {
+    background:
+        radial-gradient(circle at 25% 18%, rgba(45, 201, 255, .18), transparent 30%),
+        radial-gradient(circle at 72% 68%, rgba(0, 111, 201, .24), transparent 36%),
+        linear-gradient(rgba(87, 205, 255, .08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(87, 205, 255, .08) 1px, transparent 1px),
+        linear-gradient(180deg, #07192d 0%, #04111f 100%) !important;
+    background-size: auto, auto, 72px 72px, 72px 72px, 100% 100% !important;
+    border-color: rgba(0, 168, 240, .34) !important;
+    box-shadow: 0 28px 74px rgba(0, 70, 125, .22), inset 0 0 0 1px rgba(255, 255, 255, .05) !important;
+    color: #edf8ff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-atlas-stage::before {
+    background:
+        linear-gradient(180deg, rgba(3, 10, 20, .02), rgba(3, 10, 20, .28)),
+        radial-gradient(circle at 18% 22%, rgba(107, 219, 229, .12), transparent 30%),
+        radial-gradient(circle at 82% 76%, rgba(120, 224, 255, .10), transparent 28%) !important;
+    opacity: 1 !important;
+    z-index: 420 !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-atlas-stage::after {
+    border-color: rgba(125, 219, 255, .20) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 0 90px rgba(0, 127, 210, .08) !important;
+    opacity: 1 !important;
+}
+
+html[data-theme="light"] body.ops-body #vigilance-map,
+html[data-theme="light"] body.ops-body #vigilance-map.leaflet-container {
+    background:
+        linear-gradient(180deg, rgba(3, 11, 22, .08), rgba(3, 11, 22, .30)),
+        url("../images/kinshasa-map-fallback.svg") center / cover no-repeat,
+        linear-gradient(180deg, #081b31, #04111f) !important;
+    border-color: rgba(89, 207, 255, .34) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 0 120px rgba(0, 111, 201, .12) !important;
+    filter: saturate(1.12) contrast(1.07) brightness(.94) !important;
+}
+
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-pane,
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-map-pane,
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-tile-pane,
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-overlay-pane,
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-marker-pane,
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-tooltip-pane,
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-popup-pane {
+    background: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html[data-theme="light"] body.ops-body #vigilance-map .leaflet-tile {
+    opacity: 1 !important;
+    visibility: visible !important;
+    mix-blend-mode: normal !important;
+    filter: saturate(1.18) contrast(1.08) brightness(.88) !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-marker-icon,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-marker-shadow,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-interactive {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-atlas-panel,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-atlas-overview div,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-atlas-key,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-radar-metric,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-tactical-card,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-dispatch-item,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-engagement-item,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-sector-item,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-event-item,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-panel {
+    background: linear-gradient(180deg, rgba(8, 24, 42, .92), rgba(4, 13, 26, .86)) !important;
+    border-color: rgba(112, 215, 255, .24) !important;
+    box-shadow: 0 18px 44px rgba(2, 16, 30, .24), inset 0 1px 0 rgba(255, 255, 255, .04) !important;
+    color: #edf8ff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap :where(.vgx-atlas-panel, .vgx-atlas-overview, .vgx-atlas-key, .vgx-radar-metric, .vgx-tactical-card, .vgx-map-panel, .vgx-dispatch-item, .vgx-engagement-item, .vgx-sector-item, .vgx-event-item) :where(h2, h3, h4, strong, b, label) {
+    color: #f7fcff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap :where(.vgx-atlas-panel, .vgx-atlas-overview, .vgx-atlas-key, .vgx-radar-metric, .vgx-tactical-card, .vgx-map-panel, .vgx-dispatch-item, .vgx-engagement-item, .vgx-sector-item, .vgx-event-item) :where(p, span, small, div) {
+    color: #bde5ff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-control-stack :where(.vgx-map-view-switch, .vgx-map-zoom-readout, .vgx-map-compass),
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-control-zoom a,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-control-scale,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-control-layers {
+    background: linear-gradient(180deg, rgba(8, 24, 42, .96), rgba(4, 13, 26, .92)) !important;
+    border-color: rgba(112, 215, 255, .28) !important;
+    color: #eef8ff !important;
+    box-shadow: 0 14px 32px rgba(2, 16, 30, .28) !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-view-switch__btn {
+    color: #bfe7ff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-view-switch__btn.is-active {
+    background: linear-gradient(180deg, rgba(0, 142, 227, .92), rgba(0, 88, 168, .92)) !important;
+    border-color: rgba(115, 230, 255, .48) !important;
+    color: #ffffff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-label {
+    background: rgba(3, 13, 26, .88) !important;
+    border-color: rgba(125, 219, 255, .38) !important;
+    box-shadow: 0 10px 24px rgba(0, 22, 45, .38), 0 0 0 1px rgba(125, 219, 255, .10) inset !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-label strong,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-label small,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-label__meta {
+    color: #f7fcff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .vgx-map-label__badge {
+    background: rgba(0, 111, 201, .86) !important;
+    border-color: rgba(191, 231, 255, .42) !important;
+    color: #ffffff !important;
+}
+
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-popup-content-wrapper,
+html[data-theme="light"] body.ops-body .vgx-map-wrap .leaflet-popup-tip {
+    background: rgba(5, 18, 34, .97) !important;
+    border-color: rgba(112, 215, 255, .32) !important;
+    color: #eef8ff !important;
+}

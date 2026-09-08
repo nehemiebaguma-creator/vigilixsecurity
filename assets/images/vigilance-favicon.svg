@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">VIGILANCE</title>
+  <desc id="desc">Compact night watch shield icon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061525"/>
+      <stop offset=".58" stop-color="#081b31"/>
+      <stop offset="1" stop-color="#02070f"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="12" y1="8" x2="52" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f6fbff"/>
+      <stop offset=".45" stop-color="#55c7ff"/>
+      <stop offset="1" stop-color="#eef6ff"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="32" cy="30" r="11" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a4f4ff"/>
+      <stop offset=".5" stop-color="#38bdff"/>
+      <stop offset="1" stop-color="#173f9e"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="21" y1="10" x2="33" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff8d4"/>
+      <stop offset="1" stop-color="#f7c65f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <circle cx="32" cy="18" r="24" fill="#2bb7ff" opacity=".13"/>
+  <path d="M32 7c9 0 17 3 24 8v14c0 15-9 28-24 34C17 57 8 44 8 29V15c7-5 15-8 24-8z" fill="#edf6ff"/>
+  <path d="M32 10c8 0 15 2 21 7v12c0 13-8 25-21 30C19 54 11 42 11 29V17c6-5 13-7 21-7z" fill="#071626" stroke="url(#steel)" stroke-width="2.5"/>
+  <path fill-rule="evenodd" d="M30 14a5 5 0 1 0 0 10 7 7 0 1 1 0-10z" fill="url(#moon)"/>
+  <path d="M16 30c5-7 10-10 16-10s11 3 16 10c-5 7-10 10-16 10s-11-3-16-10z" fill="#0b1e31" stroke="#9be8ff" stroke-width="2.5"/>
+  <circle cx="32" cy="30" r="8.2" fill="url(#iris)"/>
+  <circle cx="32" cy="30" r="3.5" fill="#04111f"/>
+  <circle cx="35" cy="27" r="1.6" fill="#fff"/>
+  <path d="M22 42l10 13 10-13" fill="none" stroke="url(#steel)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

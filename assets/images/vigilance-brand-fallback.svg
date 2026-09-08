@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">VIGILANCE Security</title>
+  <desc id="desc">Night sentinel shield with a crescent moon, a vigilant eye and a luminous V monogram. It expresses: Quand tout le monde dort, VIGILANCE veille.</desc>
+  <defs>
+    <linearGradient id="bg" x1="4%" y1="4%" x2="96%" y2="96%">
+      <stop offset="0%" stop-color="#04101c"/>
+      <stop offset="55%" stop-color="#071a2e"/>
+      <stop offset="100%" stop-color="#02070f"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#2bb7ff" stop-opacity=".42"/>
+      <stop offset="55%" stop-color="#2bb7ff" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#2bb7ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbe6f3"/>
+      <stop offset="18%" stop-color="#f5fbff"/>
+      <stop offset="52%" stop-color="#8ca0b8"/>
+      <stop offset="100%" stop-color="#edf5ff"/>
+    </linearGradient>
+    <linearGradient id="shieldFill" x1="14%" y1="8%" x2="86%" y2="92%">
+      <stop offset="0%" stop-color="#122945"/>
+      <stop offset="48%" stop-color="#0a1a2d"/>
+      <stop offset="100%" stop-color="#050d17"/>
+    </linearGradient>
+    <linearGradient id="shieldStroke" x1="12%" y1="6%" x2="88%" y2="96%">
+      <stop offset="0%" stop-color="#8fe7ff"/>
+      <stop offset="45%" stop-color="#4db9ff"/>
+      <stop offset="100%" stop-color="#dfeeff"/>
+    </linearGradient>
+    <linearGradient id="eyeStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8fe7ff"/>
+      <stop offset="50%" stop-color="#f6fbff"/>
+      <stop offset="100%" stop-color="#8fe7ff"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#9cf1ff"/>
+      <stop offset="45%" stop-color="#35beff"/>
+      <stop offset="100%" stop-color="#173f9e"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8d4"/>
+      <stop offset="100%" stop-color="#f8c75f"/>
+    </linearGradient>
+    <linearGradient id="vStroke" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="35%" stop-color="#96ebff"/>
+      <stop offset="100%" stop-color="#1d7cff"/>
+    </linearGradient>
+    <radialGradient id="ember" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffe39e"/>
+      <stop offset="100%" stop-color="#ffb62a"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#56aeff" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity=".34"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="100" fill="url(#grid)" opacity=".24"/>
+  <circle cx="256" cy="118" r="178" fill="url(#aura)"/>
+
+  <g fill="#9de9ff" opacity=".84">
+    <circle cx="114" cy="90" r="3.5"/>
+    <circle cx="154" cy="68" r="2.4"/>
+    <circle cx="384" cy="84" r="3.2"/>
+    <circle cx="410" cy="112" r="2.2"/>
+    <circle cx="332" cy="58" r="2.8"/>
+  </g>
+
+  <g stroke="#41bfff" stroke-linecap="round" opacity=".58">
+    <path d="M52 370h84" stroke-width="4"/>
+    <path d="M70 342h60" stroke-width="3"/>
+    <path d="M376 370h84" stroke-width="4"/>
+    <path d="M382 342h60" stroke-width="3"/>
+  </g>
+  <g fill="#71dcff" filter="url(#glow)">
+    <circle cx="48" cy="370" r="4.5"/>
+    <circle cx="66" cy="342" r="4"/>
+    <circle cx="464" cy="370" r="4.5"/>
+    <circle cx="446" cy="342" r="4"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M256 68c68 0 131 21 180 58v111c0 118-70 223-180 271C146 460 76 355 76 237V126c49-37 112-58 180-58z" fill="url(#frame)"/>
+    <path d="M256 87c60 0 115 18 158 49v97c0 108-62 205-158 249C160 438 98 341 98 233v-97c43-31 98-49 158-49z" fill="url(#shieldFill)" stroke="url(#shieldStroke)" stroke-width="8"/>
+    <path d="M256 108c51 0 98 15 135 42v83c0 95-54 180-135 221C175 413 121 328 121 233v-83c37-27 84-42 135-42z" fill="#071626" opacity=".96"/>
+
+    <path fill-rule="evenodd" d="M254 116a30 30 0 1 0 0 60 39 39 0 1 1 0-60z" fill="url(#moon)" filter="url(#glow)"/>
+    <circle cx="286" cy="117" r="5" fill="#ffd97f"/>
+    <circle cx="305" cy="132" r="3.6" fill="#9ae8ff"/>
+
+    <path d="M196 166c18-18 39-27 60-27 21 0 42 9 60 27" fill="none" stroke="#7fddff" stroke-opacity=".22" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M146 226c34-46 72-69 110-69s76 23 110 69c-34 46-72 69-110 69s-76-23-110-69z" fill="#0b1e31" stroke="url(#eyeStroke)" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M170 226c27-31 56-46 86-46s59 15 86 46c-27 31-56 46-86 46s-59-15-86-46z" fill="none" stroke="#98ecff" stroke-opacity=".36" stroke-width="4"/>
+    <circle cx="256" cy="226" r="52" fill="url(#iris)" filter="url(#glow)"/>
+    <circle cx="256" cy="226" r="21" fill="#04111f"/>
+    <circle cx="256" cy="226" r="9" fill="url(#ember)"/>
+    <circle cx="272" cy="208" r="7" fill="#ffffff" opacity=".76"/>
+    <circle cx="244" cy="247" r="3.5" fill="#71dfff" opacity=".55"/>
+    <circle cx="256" cy="226" r="74" fill="none" stroke="#4cbcff" stroke-opacity=".18" stroke-width="4"/>
+    <circle cx="256" cy="226" r="92" fill="none" stroke="#4cbcff" stroke-opacity=".09" stroke-width="2"/>
+
+    <path d="M182 304l74 100 74-100" fill="none" stroke="url(#vStroke)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <path d="M196 305l60 82 60-82" fill="none" stroke="#eef8ff" stroke-opacity=".72" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M256 292v46" fill="none" stroke="#9fe9ff" stroke-opacity=".34" stroke-width="6" stroke-linecap="round"/>
+    <path d="M256 340l18 18-18 18-18-18z" fill="url(#ember)"/>
+
+    <path d="M168 418h64" fill="none" stroke="#36adff" stroke-width="5" stroke-linecap="round" opacity=".72"/>
+    <path d="M280 418h64" fill="none" stroke="#36adff" stroke-width="5" stroke-linecap="round" opacity=".72"/>
+    <circle cx="256" cy="418" r="7" fill="#9be8ff"/>
+  </g>
+</svg>
